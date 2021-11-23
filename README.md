@@ -1,4 +1,5 @@
-<include a CircleCI status badge, here>
+#status badge 
+[![CircleCI](https://circleci.com/gh/aslater702/project5repo/tree/main.svg?style=svg)](https://circleci.com/gh/aslater702/project5repo/tree/main)
 
 ## Project Overview
 
