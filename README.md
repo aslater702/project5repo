@@ -49,3 +49,40 @@ source .devops/bin/activate
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
+
+
+### Files Overview
+CircleCI- config.yml:
+    The config.yml file integretes with CircleCI to define jobs we want to run for the workflow
+
+Model_data- boston_housing_prediction.joblib- housing.csv:
+    These files contain data for the prediction model
+    
+output_txt_files- docker_out.txt- kubernetes_out.txt:
+    These files contian output text from the docker and kubernetes logs
+    
+app.py:
+    This file contains source code for the application
+    
+Dockerfile:
+    The dockerfile creates a working directory, copies source code, installs pip, opens port 80 and runs the app.py on launch
+    
+Make_prediction.sh:
+    This file outputs a prediction from the housing model data and returns it in the console. run_docker.sh or run_kubernetes.sh must be ran as a prerequisite to this file
+    
+MakeFile:
+    The makefile sets up, installs, lints, and tests the environment. Can be used by calling "make lint", "make install", etc
+    
+Requirements.txt
+    Installs modules needed to run the code
+    
+run_docker.sh:
+    Run docker runs the setup for the docker container to be able to run locally.
+    
+run_kubernetes.sh:
+    Run kubernetes uploads a docker image to DockerHub
+    
+upload_docker.sh:
+    Tags and uploads an image to dockerHub
+    
+    
