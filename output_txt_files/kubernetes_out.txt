@@ -1,5 +1,12 @@
-NAME       READY   STATUS    RESTARTS   AGE
-project5   1/1     Running   0          6m25s
+NAME          READY   STATUS    RESTARTS   AGE
+aslaterproj   1/1     Running   0          3m12s
 Forwarding from 127.0.0.1:8000 -> 80
 Forwarding from [::1]:8000 -> 80
 Handling connection for 8000
+voclabs:~/environment/project5repo (main) $ ./make_prediction.sh
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
