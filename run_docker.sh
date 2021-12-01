@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-## Complete the following steps to get Docker running locally
+## shell file that runs docker locally
 
 # Step 1:
-# Build image and add a descriptive tag
+# Builds docker image and tags with project 5 tag
 docker build --tag=project5 .
 
 # Step 2: 
