@@ -5,11 +5,11 @@
 # Step 1:
 # This is your Docker ID/path
 # dockerpath=<>
-dockerpath=aslater702/project5
+dockerpath=aslater702/aslaterproj
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl run project5 --image aslater702/project5
+kubectl run aslaterproj --image aslater702/aslaterproj
 
 # Step 3:
 # List kubernetes pods
